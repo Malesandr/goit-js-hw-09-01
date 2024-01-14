@@ -13,10 +13,10 @@ if (savedState) {
   try {
     const parsedState = JSON.parse(savedState);
 
-    if (parsedState.email && parsedState.message) {
+    // if (parsedState.email && parsedState.message) {
       input.value = parsedState.email;
       textarea.value = parsedState.message;
-    }
+    // }
   } catch (error) {
     console.log(error.name);
     console.log(error.message);
